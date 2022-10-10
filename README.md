@@ -19,9 +19,14 @@ docker ps -a
 docker ps     
 ```
 
-### Run a container already created
+### Run a command on already running container
 ```
-docker exec -it <containerID>
+docker exec -it <containerID> <command>
+```
+
+### Run a already created container (if stopped)
+```
+docker start -i <containerID>
 ```
 
 ### Remove a container keeping the image
